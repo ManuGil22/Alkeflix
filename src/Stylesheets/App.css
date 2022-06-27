@@ -12,3 +12,15 @@
     position: relative;
     min-height: 100vh;
 }
+
+.main-section {
+    height: calc(100vh - 4em);
+    background-color: var(--header-and-footer-background);
+}
+
+.main-img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    opacity: 0.7;
+}
