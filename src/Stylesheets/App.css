@@ -1,9 +1,14 @@
 :root {
-    --header-background: #202020;
-    --header-text-color: #ef233c;
+    --header-and-footer-background: #202020;
+    --brand-text-color: #ef233c;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+.App {
+    position: relative;
+    min-height: 100vh;
 }
