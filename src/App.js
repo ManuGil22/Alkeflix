@@ -1,10 +1,17 @@
-import './App.css';
+// Libraries
+import React from "react";
+
+// Stylesheets
+import './Stylesheets/App.css';
+
+// Components
+import Header from "./Components/Header";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <main className="App">
+      <Header />
+    </main>
   );
 }
 
