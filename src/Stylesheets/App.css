@@ -1,26 +1,65 @@
 :root {
     --header-and-footer-background: #202020;
     --brand-text-color: #ef233c;
+    --btn-color: #d90429;
 }
 
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 .App {
     position: relative;
     min-height: 100vh;
+    background-color: var(--header-and-footer-background);
 }
 
 .main-section {
     height: calc(100vh - 4em);
-    background-color: var(--header-and-footer-background);
+    background-image: url('../Cinema.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0.7;
 }
 
-.main-img{
-    width: 100%;
-    height: inherit;
-    object-fit: cover;
-    opacity: 0.7;
+.main-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--header-and-footer-background);
+    font-weight: bold;    
+}
+
+.main-welcome-header {
+    font-family: 'Titan One', cursive;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    color: var(--brand-text-color);
+    font-size: 2.5rem;
+    text-shadow: 0px 3px 3px black;
+}
+
+.main-welcome-text {
+    font-size: 1.7rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.main-welcome-btn {
+    color: var(--btn-color);
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    border: 3px solid var(--btn-color);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    text-decoration: none;
+    box-shadow: 0px 5px 5px black;
+    
+}
+
+.main-welcome-btn:hover {
+    color: var(--header-and-footer-background);
+    border: 3px solid var(--header-and-footer-background);
 }

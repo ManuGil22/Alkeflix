@@ -1,11 +1,9 @@
 // Libraries
 import React from "react";
+import { Link } from 'react-router-dom';
 
 // Stylesheets
 import './Stylesheets/App.css';
-
-// Images
-import cinemaImg from '../src/Cinema.jpg'
 
 // Components
 import Header from "./Components/Header";
@@ -17,7 +15,12 @@ function App() {
       <Header />
 
       <div className="main-section">
-        <img src={cinemaImg} className="main-img" alt="cinema"></img>
+        <div className="main-welcome">
+          <p className="main-welcome-header">WELCOME TO ALKEFLIX!</p>
+          <p className="main-welcome-text">Checkout all the movies in our theaters and</p>
+          <p className="main-welcome-text">never lose a movie premiere again!</p>
+          <Link to="/login" className="main-welcome-btn">Start now!</Link>
+        </div>
       </div>
 
       <Footer />

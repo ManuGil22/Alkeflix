@@ -14,9 +14,10 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <Link to="/" className="nav-link"><span className="navbar-brand">AlkeFlix</span></Link>
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <Link to="/listing" className="nav-link"><li className="nav-item">Listing</li></Link>
+                    <ul className="navbar-nav">
+                        <Link to="/movies" className="nav-link"><li className="nav-item">Movies</li></Link>
                         <Link to="/favorites" className="nav-link"><li className="nav-item">Favorites</li></Link>
+                        <Link to="/login" className="nav-link ms-auto me-4"><li className="nav-item">Login</li></Link>
                     </ul>
                 </div>                
             </nav>

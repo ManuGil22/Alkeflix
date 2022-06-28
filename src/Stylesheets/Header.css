@@ -20,3 +20,15 @@
     cursor: pointer;
     color: var(--brand-text-color);
 }
+
+.nav-link {
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: var(--brand-text-color);
+}
+
+.navbar-nav {
+    width: 100%;
+}
