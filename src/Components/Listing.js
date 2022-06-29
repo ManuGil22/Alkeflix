@@ -42,7 +42,7 @@ function Listing() {
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title">{ movie.title }</h5>
-                                        <p className="card-text">{ movie.overview.substring(0,120) } ...</p>
+                                        <p className="card-text">{ movie.overview.substring(0,150) } ...</p>
                                         <Link to={`/detail?movieID=${movie.id}`} className="btn">View more</Link>
                                     </div>
                                 </div>

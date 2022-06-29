@@ -1,10 +1,16 @@
 .row {
     margin: 0 50px;
     padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
 }
 
 .card-title {
     min-height: 60px;
+    text-align: center;
+}
+
+.card-text {
+    min-height: 100px;
 }
 
 .img-container {
