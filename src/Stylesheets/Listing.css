@@ -1,0 +1,17 @@
+.row {
+    margin: 0 50px;
+    padding-bottom: 50px;
+}
+
+.card-title {
+    min-height: 60px;
+}
+
+.img-container {
+    height: 650px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 100%;
+}

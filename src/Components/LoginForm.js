@@ -40,7 +40,7 @@ function LoginForm() {
                 swAlert(<h2 className='swAlert'>Succesfully logged in!</h2>)
                 const token = res.data.token;
                 sessionStorage.setItem('token', token);
-                navigate('/listing');
+                navigate('/movies');
             })
     }
 
@@ -49,7 +49,7 @@ function LoginForm() {
     return(
         <>
 
-            { token && <Navigate to="/listing" /> }
+            { token && <Navigate to="/movies" /> }
             
             <div className="container">
                 <h2 className="login-header">Login Form</h2>

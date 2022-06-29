@@ -10,6 +10,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import MainSection from "./Components/MainSection";
 import LoginForm from "./Components/LoginForm";
+import Listing from "./Components/Listing";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainSection />} />
           <Route path="/login" element={<LoginForm />} />
+          <Route path="/movies" element={<Listing />} />
         </Routes>
       </div>
 
