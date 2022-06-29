@@ -40,3 +40,9 @@
     margin-top: 2rem;
     width: 50%;
 }
+
+.swAlert {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}

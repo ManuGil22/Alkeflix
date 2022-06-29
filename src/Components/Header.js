@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import '../Stylesheets/Header.css';
 
 function Header() {
+
+    const token = sessionStorage.getItem('token');
+
     return(
         <div className="header-container">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
@@ -17,7 +20,7 @@ function Header() {
                     <ul className="navbar-nav">
                         <Link to="/movies" className="nav-link"><li className="nav-item">Movies</li></Link>
                         <Link to="/favorites" className="nav-link"><li className="nav-item">Favorites</li></Link>
-                        <Link to="/login" className="nav-link ms-auto me-4"><li className="nav-item">Login</li></Link>
+                        { !token && <Link to="/login" className="nav-link ms-auto me-4"><li className="nav-item">Login</li></Link> }
                     </ul>
                 </div>                
             </nav>
