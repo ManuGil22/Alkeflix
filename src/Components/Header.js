@@ -7,7 +7,7 @@ import '../Stylesheets/Header.css';
 
 function Header() {
 
-    const token = sessionStorage.getItem('token');
+    let token = sessionStorage.getItem('token');
 
     return(
         <div className="header-container">

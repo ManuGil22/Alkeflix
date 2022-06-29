@@ -48,9 +48,8 @@ function LoginForm() {
 
     return(
         <>
-
             { token && <Navigate to="/movies" /> }
-            
+
             <div className="container">
                 <h2 className="login-header">Login Form</h2>
                 <form className="form-container" onSubmit={submitHandler}>

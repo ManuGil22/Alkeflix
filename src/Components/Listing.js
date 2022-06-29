@@ -30,7 +30,7 @@ function Listing() {
     return(
         <>
             { !token && <Navigate to="/login" />}
-
+            
             <div className='row'>
                 {
                     moviesList.map((movie, index) => {

@@ -11,18 +11,19 @@ import Footer from "./Components/Footer";
 import MainSection from "./Components/MainSection";
 import LoginForm from "./Components/LoginForm";
 import Listing from "./Components/Listing";
+import Details from "./Components/Details";
 
 function App() {
   return (
     <main className="App">
       <Header />
 
-
       <div className="main">
         <Routes>
           <Route path="/" element={<MainSection />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/movies" element={<Listing />} />
+          <Route path="/detail" element={<Details />} />
         </Routes>
       </div>
 

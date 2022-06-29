@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // Stylesheets
 import '../Stylesheets/MainSection.css';
 
+
 function MainSection(){
     return(
         <div className="main-section">
