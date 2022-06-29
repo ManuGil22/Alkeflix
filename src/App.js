@@ -1,6 +1,6 @@
 // Libraries
 import React from "react";
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 // Stylesheets
 import './Stylesheets/App.css';
@@ -9,6 +9,7 @@ import './Stylesheets/App.css';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import MainSection from "./Components/MainSection";
+import LoginForm from "./Components/LoginForm";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <div className="main">
         <Routes>
           <Route path="/" element={<MainSection />} />
+          <Route path="/login" element={<LoginForm />} />
         </Routes>
       </div>
 
