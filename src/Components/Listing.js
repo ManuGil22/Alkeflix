@@ -8,7 +8,7 @@ import swAlert from '@sweetalert/with-react';
 // Stylesheets
 import '../Stylesheets/Listing.css';
 
-function Listing() {
+function Listing({ addOrRemoveFavs }) {
 
     let token = sessionStorage.getItem('token');
 
@@ -40,6 +40,7 @@ function Listing() {
                                     <div className='img-container'>
                                         <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className="card-img-top" alt="movie poster" />
                                     </div>
+                                    <button className='favourite-btn' onClick={addOrRemoveFavs} data-movie-id={movie.id}>🖤</button>
                                     <div className="card-body">
                                         <h5 className="card-title">{ movie.title }</h5>
                                         <p className="card-text">{ movie.overview.substring(0,150) } ...</p>
