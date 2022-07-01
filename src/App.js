@@ -49,18 +49,22 @@ function App() {
       return movie.id === movieData.id
     });
 
+    const favIcon = btn.querySelector('.fav-icon');
+
     if (!movieIsInFavs) {
       tempMoviesInFavs.push(movieData);
       localStorage.setItem('favs', JSON.stringify(tempMoviesInFavs));
       setFavorites(tempMoviesInFavs);
+      favIcon.classList.add('fav-icon-filled');
     } else {
       let moviesLeft = tempMoviesInFavs.filter(movie => {
         return movie.id !== movieData.id
       });
       localStorage.setItem('favs', JSON.stringify(moviesLeft));
-      console.log(moviesLeft);
       setFavorites(moviesLeft);
+      favIcon.classList.remove('fav-icon-filled');
     }
+    
   } 
 
   return (
@@ -71,7 +75,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainSection />} />
           <Route path="/login" element={<LoginForm />} />
-          <Route path="/movies" element={<Listing addOrRemoveFavs={addOrRemoveFavs} />} />
+          <Route path="/movies" element={<Listing addOrRemoveFavs={addOrRemoveFavs} favorites={favorites} />} />
           <Route path="/detail" element={<Details />} />
           <Route path="/favorites" element={<Favorites addOrRemoveFavs={addOrRemoveFavs} favorites={favorites} />} />
         </Routes>
