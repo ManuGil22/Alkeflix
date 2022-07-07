@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 // Stylesheets
 import '../Stylesheets/Header.css';
 
+// Components
+import Browser from "./Browser";
+
 function Header() {
 
     let token = sessionStorage.getItem('token');
@@ -21,6 +24,7 @@ function Header() {
                         <Link to="/movies" className="nav-link"><li className="nav-item">Movies</li></Link>
                         <Link to="/favorites" className="nav-link"><li className="nav-item">Favorites</li></Link>
                         { !token && <Link to="/login" className="nav-link ms-auto me-4"><li className="nav-item">Login</li></Link> }
+                        { token && <Browser /> }
                     </ul>
                 </div>                
             </nav>

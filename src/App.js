@@ -14,9 +14,11 @@ import LoginForm from "./Components/LoginForm";
 import Listing from "./Components/Listing";
 import Details from "./Components/Details";
 import Favorites from "./Components/Favorites";
+import Results from "./Components/Results";
 
 function App() {
   const [ favorites, setFavorites ] = useState([]);
+  const [ token, setToken] = useState(null);
 
   useEffect(() => {
     const favMovies = localStorage.getItem('favs');
@@ -25,6 +27,17 @@ function App() {
         setFavorites(favsArray);
     }
   }, []);
+
+  function fetchData (){
+    const userToken = sessionStorage.getItem('token');
+    if (userToken){
+      setToken(userToken);
+    }
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, [token]);
 
   const addOrRemoveFavs = (e) => {
     const favMovies = localStorage.getItem('favs');
@@ -74,10 +87,11 @@ function App() {
       <div className="main">
         <Routes>
           <Route path="/" element={<MainSection />} />
-          <Route path="/login" element={<LoginForm />} />
+          <Route path="/login" element={<LoginForm fetchData={fetchData} />} />
           <Route path="/movies" element={<Listing addOrRemoveFavs={addOrRemoveFavs} favorites={favorites} />} />
           <Route path="/detail" element={<Details />} />
           <Route path="/favorites" element={<Favorites addOrRemoveFavs={addOrRemoveFavs} favorites={favorites} />} />
+          <Route path="/results" element={<Results />} />
         </Routes>
       </div>
 

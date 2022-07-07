@@ -7,7 +7,7 @@ import { useNavigate, Navigate } from 'react-router-dom';
 // Stylesheets
 import '../Stylesheets/LoginForm.css';
 
-function LoginForm() {
+function LoginForm({ fetchData }) {
 
     const navigate = useNavigate();
 
@@ -40,6 +40,7 @@ function LoginForm() {
                 swAlert(<h2 className='swAlert'>Succesfully logged in!</h2>)
                 const token = res.data.token;
                 sessionStorage.setItem('token', token);
+                fetchData();
                 navigate('/movies');
             })
     }
