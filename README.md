@@ -7,7 +7,6 @@ This is a solution to the Alkemy React Skill Up Challenge.
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -33,10 +32,6 @@ Users should be able to:
 ![](./screenshot4.png)
 ![](./screenshot5.png)
 
-
-### Links
-
-- Live Site URL: [Github project page](https://manugil22.github.io/Alkeflix/)
 
 ## My process
 

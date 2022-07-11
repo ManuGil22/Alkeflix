@@ -14,7 +14,7 @@ function Favorites ({ addOrRemoveFavs, favorites }) {
 
     return(
         <>
-            { !token && <Navigate to="/" /> }
+            { !token && <Navigate to="/login" />}
 
             <h2 className='fav-amount'>{favorites.length ? favorites.length : 'No' } favorite movies</h2>
             <div className='row'>
