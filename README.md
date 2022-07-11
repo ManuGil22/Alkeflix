@@ -25,13 +25,13 @@ Users should be able to:
 - Search movies by a keyword
 - See movies details
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.PNG)
-![](./screenshot2.PNG)
-![](./screenshot3.PNG)
-![](./screenshot4.PNG)
-![](./screenshot5.PNG)
+![](./screenshot.png)
+![](./screenshot2.png)
+![](./screenshot3.png)
+![](./screenshot4.png)
+![](./screenshot5.png)
 
 
 ### Links
